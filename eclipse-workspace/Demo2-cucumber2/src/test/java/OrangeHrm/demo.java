@@ -10,7 +10,7 @@ import io.cucumber.java.en.*;
 public class demo {
 	
 	static {
-//		System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
 	}
  WebDriver driver;
 
