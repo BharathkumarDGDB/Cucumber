@@ -29,6 +29,7 @@ public class demo {
 	public void i_verify_that_the_logo_present_on_page() throws Throwable {
    boolean status = driver.findElement(By.xpath("//img[@alt='OrangeHRM Logo']")).isDisplayed();
 	Assert.assertEquals(true,status);
+	System.out.println("The Logo is present in the application");
 	}
 
 	@And("^Close browser$")
