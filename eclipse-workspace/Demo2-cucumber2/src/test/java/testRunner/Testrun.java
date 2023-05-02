@@ -8,12 +8,13 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions
         (
-		features=".//Features/Login.feature",
-		glue="stepDefinations",
+		features="./Features/login.feature",
+		glue="stepDefinitions",
 		dryRun=true,
-		plugin= {"pretty",
-				"html.test-output"		
-		}
+		//plugin = {"json:target/cucumber.json"},
+		monochrome=true,
+		
+		plugin= {"pretty","html:test-output"}
 		
 		)
 public class Testrun {

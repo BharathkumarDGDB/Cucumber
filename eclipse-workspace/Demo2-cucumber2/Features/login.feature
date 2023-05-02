@@ -1,5 +1,6 @@
 Feature: Login
 
+ @smoke 
 Scenario: Successful Login with vlaid credentials 
     Given User launch Chrome browser 
     When user opens URL "http://admin-demo.nopcommerce.com/login"
