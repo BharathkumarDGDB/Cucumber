@@ -1,7 +1,6 @@
 package testRunner;
 
 import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -10,11 +9,10 @@ import io.cucumber.junit.CucumberOptions;
         (
 		features="./Features/login.feature",
 		glue="stepDefinitions",
-		dryRun=true,
+		dryRun=false,
 		//plugin = {"json:target/cucumber.json"},
 		monochrome=true,
-		
-		plugin= {"pretty","html:test-output"}
+		plugin= {"pretty","html:testoutput"}
 		
 		)
 public class Testrun {
